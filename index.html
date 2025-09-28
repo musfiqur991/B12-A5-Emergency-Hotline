@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Hotline</title>
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    
+
+<body class="max-w-screen-2xl mx-auto">
+    <!-- Nav section -->
+    <header style="box-shadow: 0px 1px 50px 0px rgba(181, 181, 181, 0.25);
+background: var(--White, rgba(255, 255, 255, 1));" class="lg:px-14 p-4 lg:py-6 ">
+        <nav class="lg:flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-12"><img src="./assets/logo.png" alt=""></div>
+                <h3 class="text-[rgba(0,103,71,1)] font-bold text-2xl">Emergency<br>Service</h3>
+            </div>
+            <div>
+                <button class="btn rounded-[50px] bg-[rgba(65,255,107,0.1)] font-black w-32"><span id="heart">0</span>
+                    <img class="w-7" src="./assets/heart.png" alt=""></button>
+                <button class="btn rounded-[50px] bg-[rgba(65,255,107,0.1)] font-black w-32"><span
+                        id="icon">100</span><img class="w-5" src="./assets/coin.png" alt=""></button>
+                <button class="btn rounded-[50px] w-32 text-white bg-[#00A63E]"><span id="copy">2</span>Copy</button>
+            </div>
+        </nav>
+    </header>
+    <!-- 2 hero section  -->
+    <section
+        style="background: linear-gradient(90.00deg, rgba(1.251827359199524, 49.64006805419922, 34.606834411621094, 1),rgba(0, 103, 71, 1) 50%,rgba(1, 50, 35, 1) 100%);"
+        class="py-5">
+        <div class="flex flex-col justify-center items-center">
+            <div class="w-24"><img src="./assets/logo-dark.png" alt=""></div>
+        <div class="text-center text-white">
+            <h3 class="text-[40px] font-bold">Emergency Service Directory</h3>
+            <p class="text-[20px] font-semibold">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        </div>
+        </div>
+    </section>
 </body>
+
 </html>
