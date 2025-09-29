@@ -51,3 +51,21 @@ document.getElementById("clear").addEventListener("click", function () {
     document.getElementById("call-history").innerHTML = ""
     callHistoryData.length = 0
 })
+
+const copyButtons = document.getElementsByClassName("copy-btn");
+for (let i = 0; i < copyButtons.length; i++) {
+  copyButtons[i].addEventListener("click", function () {
+    const card = this.closest(".cards");
+    const number = card.querySelector("h1").innerText;
+    navigator.clipboard.writeText(number).then(() => {
+      alert(`Your number is copied: ${number}`)
+      ;
+      count += 1;
+        parseInt(document.getElementById("copy").innerText = count)
+      
+    });
+   
+  });
+
+  
+}
