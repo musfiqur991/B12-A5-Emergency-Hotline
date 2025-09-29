@@ -1,4 +1,5 @@
 let count = 0;
+let copyCount=0;
 const callHistoryData=[]
 
 const totalHardClick = document.getElementsByClassName("heart-btn");
@@ -60,8 +61,8 @@ for (let i = 0; i < copyButtons.length; i++) {
     navigator.clipboard.writeText(number).then(() => {
       alert(`Your number is copied: ${number}`)
       ;
-      count += 1;
-        parseInt(document.getElementById("copy").innerText = count)
+      copyCount += 1;
+        parseInt(document.getElementById("copy").innerText = copyCount)
       
     });
    
